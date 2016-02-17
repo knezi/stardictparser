@@ -1,0 +1,17 @@
+pushd data
+`rm *.tar.gz`
+`rm *.zip`
+# PANGO SYNTAX - sametypesequence=g
+wget http://dl.cihar.com/slovnik/stardict-english-czech-latest.tar.gz
+tar xf stardict-english-czech-latest.tar.gz
+wget http://dl.cihar.com/slovnik/stardict-czech-latest.tar.gz
+tar xf stardict-czech-latest.tar.gz
+
+
+# sametypesequence=h
+# VERSION 3.0.0
+wget http://tovotu.de/data/stardict/gcide.zip
+unzip gcide.zip
+wget http://tovotu.de/data/stardict/etymonline.zip
+unzip etymonline.zip
+popd
