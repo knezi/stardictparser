@@ -12,21 +12,21 @@ Pro kompilaci readidx:
 
 Ve složce je již zkomplivaný modul readidx pro x86\_64. Pro opětovnou kompilaci stačí odkomentovat první dvě řádky v build.sh
 
-POUŽITí
+POUŽITÍ
 =======
-./main.py - parser
+`./main.py` - parser
 
-./find.py - prohledává textový formát
+`./find.py` - prohledává textový formát
 
-Přesný popis parametrů viz ./main.py -h a ./find.py -h
+Přesný popis parametrů viz `./main.py -h` a `./find.py -h`
 
 TESTOVÁNÍ
 =========
-Stačí spustit ./build.sh. Stáhnou se slovníky do složky data a v res se objeví již v textovém formátu. Je tam příklad různých verzí - viz data/get
+Stačí spustit `./build.sh`. Stáhnou se slovníky do složky data a v res se objeví již v textovém formátu. Je tam příklad různých verzí - viz data/get
 
 PROGRAMÁTORSKÁ DOKUMENTACE
 ==========================
-Popis stardict na adrese: https://web.archive.org/web/20131108165307/http://code.google.com/p/babiloo/wiki/StarDict format
+Popis stardict na adrese: https://web.archive.org/web/20131108165307/http://code.google.com/p/babiloo/wiki/StarDict\_format
 
 Program zvládá verze 2.4.2 a 3.0.0 se sametypesequence={m,g,h,t}.
 
@@ -62,11 +62,11 @@ readidx.c
 ---------
 Modul v c, který umožňuje číst idx soubor.
 
-startRead dostane cestu a velikost idxoffset (4B vs. 8B).
+`startRead` dostane cestu a velikost idxoffset (4B vs. 8B).
 
-nextRecot vrátí překódovaný další záznam do UTF-8 a zároveň se stará o překódování z Big endianu.
+`nextRecord` vrátí překódovaný další záznam do UTF-8 a zároveň se stará o překódování z Big endianu.
 
-stopRead uvolní zdroje.
+`stopRead` uvolní zdroje.
 
 find.py
 -------
