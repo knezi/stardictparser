@@ -3,16 +3,21 @@ Zápočtový program pro první semestr na Matematicko-fyzikální fakultě
 INSTALACE
 =========
 Závislosti:
-python
+
+`python`
+
 Pro kompilaci readidx:
-gcc, python-dev (v Archu již součástí systému)
+
+`gcc, python-dev` (v Archu již součástí systému)
 
 Ve složce je již zkomplivaný modul readidx pro x86\_64. Pro opětovnou kompilaci stačí odkomentovat první dvě řádky v build.sh
 
 POUŽITí
 =======
 ./main.py - parser
+
 ./find.py - prohledává textový formát
+
 Přesný popis parametrů viz ./main.py -h a ./find.py -h
 
 TESTOVÁNÍ
@@ -26,7 +31,9 @@ Popis stardict na adrese: https://web.archive.org/web/20131108165307/http://code
 Program zvládá verze 2.4.2 a 3.0.0 se sametypesequence={m,g,h,t}.
 
 Textový formát začíná hlavičkou:
-#DICTFORMAT:k@d@p
+
+`#DICTFORMAT:k@d@p`
+
 Kde @ je oddělovač a písmena za dvojtečkou specifikují, která pole jsou v každém záznamu.
 
 Každá další řádka je jeden záznam. Nepřítomnost nějakého pole je ekvivalentní ''.
