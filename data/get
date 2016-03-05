@@ -1,3 +1,4 @@
+#!/bin/bash
 pushd data
 `rm *.tar.gz`
 `rm *.zip`

@@ -1,4 +1,4 @@
-#!/bin/env sh
+#!/bin/bash
 # uncomment to rebuild c module
 #./setup.py build
 #`cp build/lib*/* .`
